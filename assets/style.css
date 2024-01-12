@@ -28,8 +28,21 @@ h5 {
   color: #008766;
 }
 
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Shrikhand", serif;
+}
+
 a {
   text-decoration: none;
+}
+
+ul {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .navbar {
@@ -60,7 +73,7 @@ a {
 }
 
 .explore {
-  background-color: red;
+  background-color: #F6F6F6;
   padding: 30px 0 40px;
 }
 .explore .explore__box {
@@ -107,7 +120,7 @@ a {
 
 .fonctionnement {
   padding: 30px 10px;
-  background-color: blue;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
@@ -156,6 +169,7 @@ a {
 }
 
 .restaurants {
+  gap: 20px;
   display: flex;
   flex-direction: column;
   padding: 30px 10px;
@@ -171,9 +185,9 @@ a {
 .restaurants .restaurant__card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
-  height: 210px;
+  height: 180px;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
   aspect-ratio: 1/1;
 }
 .restaurants .restaurant__card .news__card {
@@ -210,6 +224,28 @@ a {
 }
 .restaurants .restaurant__card .cardContent .hidden-checkbox:checked + .checkbox-label::before {
   content: url("/assets/images/Icon/full-heart.svg");
+}
+
+.footer__box {
+  color: white;
+  width: 100%;
+  height: 180px;
+  background-color: #353535;
+}
+.footer__box .footer__content {
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__box .footer__content .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__box .footer__content .footer__list .footer__list__flex {
+  display: flex;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
