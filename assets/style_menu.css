@@ -7,7 +7,7 @@ h1 {
 
 h2, h3, h4, h5 {
   font-family: Roboto;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
 }
 
@@ -33,15 +33,34 @@ h5 {
   color: #353535;
 }
 
-body {
+h6 {
+  margin: 20px 0;
+  padding: 0;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+ul {
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 220vh;
+  margin: 0;
 }
 body .navbar {
   display: flex;
   align-items: center;
   gap: 60px;
-  padding: 10px 0;
+  padding: 20px 10px;
 }
 body .navbar .btn__goback {
   border: none;
@@ -50,53 +69,108 @@ body .navbar .btn__goback {
 body .navbar .navbar__logo {
   width: 50%;
 }
+body .menu__container {
+  flex: 1;
+}
 body .menu__container .img__restau {
   width: 100%;
+  height: 270px;
+  object-fit: cover;
 }
-body .menu__container .menu__card {
+body .menu__container .overlay {
+  width: 100%;
+  top: 280px;
+  position: absolute;
+}
+body .menu__container .overlay .menu__card {
   background-color: #F6F6F6;
   width: 100%;
+  border-radius: 25px;
+  height: 170vh;
 }
-body .menu__container .menu__card .menu__restau {
+body .menu__container .overlay .menu__card .menu__restau {
   width: 90%;
-  padding: 0 10px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .menu__container .menu__card .menu__restau .hidden-checkbox {
+body .menu__container .overlay .menu__card .menu__restau .hidden-checkbox {
   display: none;
 }
-body .menu__container .menu__card .menu__restau .hidden-checkbox:checked + .checkbox-label::before {
+body .menu__container .overlay .menu__card .menu__restau .hidden-checkbox:checked + .checkbox-label::before {
   content: url("/assets/images/Icon/full-heart.svg");
 }
-body .menu__container .menu__card .menu__restau .checkbox-label {
+body .menu__container .overlay .menu__card .menu__restau .checkbox-label {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
-body .menu__container .menu__card .menu__restau .checkbox-label::before {
+body .menu__container .overlay .menu__card .menu__restau .checkbox-label::before {
   content: url("/assets/images/Icon/heart.svg");
   display: block;
   width: 100%;
   height: 100%;
 }
 body .menu__container .menu__content {
-  width: 90%;
-  padding: 0 10px;
+  width: 95%;
+  padding: 15px 10px;
 }
-body .menu__container .menu__content .menu__card {
+body .menu__container .menu__content .menu__card__food {
   display: flex;
   padding: 12px;
   margin: 12px 0;
-  background-color: grey;
+  background-color: #FFFFFF;
   justify-content: space-between;
   align-items: flex-end;
   border-radius: 25px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
-body .menu__container .menu__content .menu__card .desc__flex {
+body .menu__container .menu__content .menu__card__food .desc__flex {
   display: flex;
   flex-direction: column;
+}
+body .command__btn__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .command__btn__box .command__btn {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 16px;
+  color: white;
+}
+body .footer__box {
+  color: white;
+  contain: content;
+  width: 100%;
+  height: 190px;
+  background-color: #353535;
+}
+body .footer__box .footer__content {
+  padding: 0 20px;
+}
+body .footer__box .footer__content .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: flex-start;
+}
+body .footer__box .footer__content .footer__list .footer__list__flex {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style_menu.css.map */
