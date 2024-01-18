@@ -59,7 +59,6 @@ body {
 body .navbar {
   display: flex;
   align-items: center;
-  gap: 60px;
   padding: 20px 10px;
 }
 body .navbar .btn__goback {
@@ -67,7 +66,7 @@ body .navbar .btn__goback {
   background: none;
 }
 body .navbar .navbar__logo {
-  width: 50%;
+  width: 260px;
 }
 body .menu__container {
   flex: 1;
