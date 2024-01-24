@@ -1,0 +1,24 @@
+.hidden-checkbox {
+    display: none;
+}
+
+.hidden-checkbox:checked + .checkbox-label::before {
+    content: url('/assets/images/Icon/full-heart.svg'); 
+
+}
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 1em; 
+    height: 1em; 
+
+    &::before {
+        content: url('/assets/images/Icon/heart.svg'); 
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+

@@ -1,0 +1,55 @@
+/* Media query pour les ordinateurs de bureau */
+@media only screen and (min-width: 1024px) {
+
+	.explore {
+		.explore__box h2 {
+			width: 100%;
+			font-size: 40px;
+		} 
+
+		.explore__btn__box {
+			.explore__btn {
+				width: 25%;
+			}
+		}
+	}
+
+	.fonctionnement {
+		padding: 30px 50px;
+		.fonc__card__box {
+			width: 100%;
+			display: flex;
+		}
+	}
+
+	.restaurants {
+		padding: 30px 50px;
+
+		.restaurant__card__flex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.restaurant__card {
+				width: 45%;
+			}
+		}
+	}
+	// Footer
+	.footer__box {
+		.footer__content {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: flex-end;
+				height: 110px;
+				gap: 40px;
+			.footer__list {
+				display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					justify-content: flex-start;
+			}
+		}
+	}
+	
+}
