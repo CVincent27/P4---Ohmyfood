@@ -1,59 +1,74 @@
 // Barre de nav
 .navbar {
-	margin-top: 15px;
-	height: 63px;
+	padding: 15px 90px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.navbar__logo {
-		width: 260px;
+
+	.navbar__title {
+		font-family: $font-secondary;
+		font-size: 30px
 	}
 }
 
 // Section location
-.location__input {
-	width: 99%;
-	height: 50px;
-	background: #EAEAEA;
-	border-left: none;
-	border-right: none;
-	text-align: center;
-}
-.input-with-logo {
-	background-image: url(./images/Icon/Pin.png);
-	background-size: 20px;
-	background-repeat: no-repeat;
-	background-position: 5px center;
-	border: 1px solid #ccc;
+.location {
+	background: var(--Grey-2, #EAEAEA);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+	.location__box {
+		display: flex;
+		width: 100%;
+		height: 50px;
+		background: #EAEAEA;
+		border-left: none;
+		border-right: none;
+		justify-content: center;
+		align-items: center;
+		gap: 17px;
+
+	}
+
+	.location__text {
+		color: $grey;
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $font-primary;
+	}
+
 }
 
 // Section explore
 .explore {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	background-color: #F6F6F6;
 	padding: 30px 0 40px;
+
 	.explore__box {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
+		gap: 20px;
+
 		h2 {
-			width: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			color: black;
 		}
+
 		h3 {
-			margin-top: 20px;
-			width: 70%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			font-weight: 300;
-			font-size: 18px;
 			color: #353535;
 		}
 	}
-	
+
 }
 
 // Section fonctionnement
@@ -62,14 +77,17 @@
 	background-color: #FFFFFF;
 	display: flex;
 	flex-direction: column;
+
 	.fonc__card__box {
 		width: 100%;
+
 		.fonc__card {
 			margin-top: 20px;
 			width: 100%;
 			height: 50px;
 			display: flex;
 			align-items: center;
+
 			.fonc__round {
 				position: relative;
 				right: 5px;
@@ -84,6 +102,7 @@
 				margin-right: 10px;
 				z-index: 1;
 			}
+
 			.fonc__card__clickable {
 				position: relative;
 				right: 30px;
@@ -96,6 +115,7 @@
 				border-radius: 25px;
 				z-index: 0;
 				box-shadow: 0px 4px 15px 0px #00000026;
+
 				h4 {
 					display: flex;
 					align-items: center;
@@ -104,4 +124,5 @@
 				}
 			}
 		}
-}	}
+	}
+}

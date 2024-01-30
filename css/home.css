@@ -1,23 +1,24 @@
-@charset "UTF-8";
 .explore__btn__box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .explore__btn__box .explore__btn {
-  cursor: pointer;
-  margin-top: 20px;
-  height: 50px;
+  color: #FFF;
   display: flex;
-  width: 50%;
   align-items: center;
   justify-content: center;
+  height: 50px;
+  width: 70%;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.explore__btn__box .explore__btn .explore__btn__text {
   font-size: 16px;
-  color: white;
+  font-weight: 500;
+  font-family: roboto;
 }
 
 .restaurants {
@@ -32,7 +33,7 @@
   flex-direction: column;
   width: 100%;
   border-radius: 20px;
-  background-color: #FFFFFF;
+  background-color: var(white);
 }
 .restaurants .restaurant__card img {
   border-radius: 15px 15px 0 0;
@@ -45,7 +46,7 @@
 .restaurants .restaurant__card .news__card {
   display: flex;
   position: absolute;
-  background-color: #99E2D0;
+  background-color: var(#99e2d0);
   width: 80px;
   height: 30px;
   justify-content: center;
@@ -57,25 +58,6 @@
   align-items: center;
   padding: 20px;
   color: black;
-}
-.restaurants .restaurant__card .cardContent .checkbox-label {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 1em;
-  height: 1em;
-}
-.restaurants .restaurant__card .cardContent .checkbox-label::before {
-  content: url("/assets/images/Icon/heart.svg");
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.restaurants .restaurant__card .cardContent .hidden-checkbox {
-  display: none;
-}
-.restaurants .restaurant__card .cardContent .hidden-checkbox:checked + .checkbox-label::before {
-  content: url("/assets/images/Icon/full-heart.svg");
 }
 
 .hidden-checkbox {
@@ -148,34 +130,42 @@ ul {
 }
 
 .navbar {
-  margin-top: 15px;
-  height: 63px;
+  padding: 15px 90px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar .navbar__logo {
-  width: 260px;
+.navbar .navbar__title {
+  font-family: shrikhand;
+  font-size: 30px;
 }
 
-.location__input {
-  width: 99%;
+.location {
+  background: var(--Grey-2, #EAEAEA);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.location .location__box {
+  display: flex;
+  width: 100%;
   height: 50px;
   background: #EAEAEA;
   border-left: none;
   border-right: none;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
 }
-
-.input-with-logo {
-  background-image: url(./images/Icon/Pin.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 5px center;
-  border: 1px solid #ccc;
+.location .location__text {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: roboto;
 }
 
 .explore {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #F6F6F6;
   padding: 30px 0 40px;
 }
@@ -183,22 +173,20 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 .explore .explore__box h2 {
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
 }
 .explore .explore__box h3 {
-  margin-top: 20px;
-  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 300;
-  font-size: 18px;
   color: #353535;
 }
 
@@ -272,50 +260,4 @@ ul {
 .footer__box .footer__content .footer__list .footer__list__flex {
   display: flex;
   gap: 10px;
-}
-
-/* Media query pour les ordinateurs de bureau */
-@media only screen and (min-width: 1024px) {
-  .explore .explore__box h2 {
-    width: 100%;
-    font-size: 40px;
-  }
-  .explore .explore__btn__box .explore__btn {
-    width: 25%;
-  }
-  .fonctionnement {
-    padding: 30px 50px;
-  }
-  .fonctionnement .fonc__card__box {
-    width: 100%;
-    display: flex;
-  }
-  .restaurants {
-    padding: 30px 50px;
-  }
-  .restaurants .restaurant__card__flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .restaurants .restaurant__card__flex .restaurant__card {
-    width: 45%;
-  }
-  .footer__box .footer__content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    height: 110px;
-    gap: 40px;
-  }
-  .footer__box .footer__content .footer__list {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  /* Ajoutez d'autres styles spécifiques aux ordinateurs de bureau ici */
-}
-
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

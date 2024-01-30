@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/home.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,12 +13,14 @@
 </head>
 <header>
     <nav class="navbar">
-        <img class="navbar__logo" src="./assets/images/logo/ohmyfood.png" alt="logo">
+        <h1 class="navbar__title">Ohmyfood</h1>
     </nav>
 
     <section class="location">
         <div class="location__box">
-            <input class="location__input input-with-logo" type="text" placeholder="Paris, Belleville">
+            <!-- <input class="location__input location__text" type="text" value="Paris, Belleville"> -->
+            <img class="location__logo" src="./assets/images/Icon/Pin.png" alt="">
+            <p class="location__text">Paris, Belleville</p>
         </div>
     </section>
 
@@ -30,7 +32,9 @@
             <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
         </div>
         <div class="explore__btn__box">
-            <button class="explore__btn">Explorer nos restaurants</button>
+            <button class="explore__btn">
+                <p class="explore__btn__text">Explorer nos restaurants</p>
+            </button>
         </div>
     </section>
 
