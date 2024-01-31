@@ -2,7 +2,6 @@ h1 {
     font-family: Shrikhand;
     font-weight: 400;
     font-size: 28px;
-    font-style: italic;
 }
 
 h2, h3, h4, h5{
@@ -73,24 +72,22 @@ body {
     }
 
     .menu__container {
-        flex: 1;
 	    .img__restau {
 		    width: 100%;
-            height: 270px;
+            height: 275px;
             object-fit: cover;
 	    }
         .overlay {
             width: 100%;
-            top: 280px;
-            position: absolute;
             .menu__card {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
                 background-color: #F6F6F6;
-                width: 100%;
                 border-radius: 25px;
-                height: 170vh;
+                padding: 15px 15px 0 15px;
                 .menu__restau {
-                    width: 90%;
-                    padding: 10px 10px;
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -120,8 +117,7 @@ body {
 
         }
         .menu__content {
-            width: 95%;
-            padding: 15px 10px;
+            width: 100%;
             .menu__card__food {
                 display: flex;
                 padding: 12px;
@@ -143,9 +139,8 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+        margin-bottom: 40px;
 		.command__btn {
-			cursor: pointer;
-			margin-top: 20px;
 			height: 50px;
 			display: flex;
 			width: 50%;
