@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Shrikhand", serif;
+}
+
 .explore__btn__box {
   display: flex;
   align-items: center;
@@ -18,7 +70,27 @@
 .explore__btn__box .explore__btn .explore__btn__text {
   font-size: 16px;
   font-weight: 500;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
+}
+
+.command__btn__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.command__btn__box .command__btn {
+  height: 50px;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 16px;
+  color: white;
 }
 
 .restaurants {
@@ -89,53 +161,6 @@
   height: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-h2, h3, h4, h5 {
-  font-family: Roboto;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 17px;
-  font-weight: 300;
-}
-
-h5 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #008766;
-}
-
-h6 {
-  font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
-  font-family: "Shrikhand", serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-}
-
 .navbar {
   padding: 15px 90px;
   display: flex;
@@ -143,7 +168,6 @@ ul {
   justify-content: center;
 }
 .navbar .navbar__title {
-  font-family: shrikhand;
   font-size: 30px;
 }
 
@@ -165,7 +189,7 @@ ul {
   color: #353535;
   font-size: 16px;
   font-weight: 500;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 .explore {
@@ -265,4 +289,88 @@ ul {
 .footer__box .footer__content .footer__list .footer__list__flex {
   display: flex;
   gap: 10px;
-}/*# sourceMappingURL=home.css.map */
+}
+
+.menu__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu__content .menu__title__desc {
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 10%;
+}
+.menu__content .menu__card__food {
+  display: flex;
+  padding: 12px;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 25px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+}
+.menu__content .menu__card__food .desc__flex {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .navbar__menu {
+  gap: 42px;
+  padding: 14px 17px;
+  justify-content: flex-start;
+}
+body .navbar__menu .btn__goback {
+  border: none;
+  background: none;
+  padding: 0;
+}
+body .navbar__menu .navbar__title {
+  font-weight: 700;
+}
+body .menu__container .img__restau {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+body .menu__container .overlay {
+  width: 100%;
+}
+body .menu__container .overlay .menu__card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 15px 15px 0 15px;
+}
+body .menu__container .overlay .menu__card .menu__restau {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .menu__container .overlay .menu__card .menu__restau .nom__restau {
+  font-size: 28px;
+}
+body .menu__container .overlay .menu__card .menu__restau .hidden-checkbox {
+  display: none;
+}
+body .menu__container .overlay .menu__card .menu__restau .hidden-checkbox:checked + .checkbox-label::before {
+  content: url("/assets/images/Icon/full-heart.svg");
+}
+body .menu__container .overlay .menu__card .menu__restau .checkbox-label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+body .menu__container .overlay .menu__card .menu__restau .checkbox-label::before {
+  content: url("/assets/images/Icon/heart.svg");
+  display: block;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */

@@ -18,3 +18,24 @@
         }
     }
 }
+
+.command__btn__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .command__btn {
+        height: 50px;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        box-shadow: 0px 4px 10px 0px #00000040;
+        font-size: 16px;
+        color: white;
+    }
+}
