@@ -58,14 +58,17 @@ body {
 body .navbar {
   display: flex;
   align-items: center;
-  padding: 20px 10px;
+  gap: 42px;
+  padding: 14px 17px;
 }
 body .navbar .btn__goback {
   border: none;
   background: none;
+  padding: 0;
 }
-body .navbar .navbar__logo {
-  width: 260px;
+body .navbar .navbar__title {
+  font-size: 30px;
+  margin: 0;
 }
 body .menu__container .img__restau {
   width: 100%;
@@ -108,6 +111,13 @@ body .menu__container .overlay .menu__card .menu__restau .checkbox-label::before
 }
 body .menu__container .menu__content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .menu__container .menu__content .menu__title__desc {
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 10%;
 }
 body .menu__container .menu__content .menu__card__food {
   display: flex;
