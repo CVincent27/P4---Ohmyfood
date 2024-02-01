@@ -45,6 +45,25 @@
 .disappear {
     animation: end 1s forwards;
     animation-delay: 2s;
+
+    .loader__circle--1 {
+        animation: shrinkAndFade 2s forwards 1s;
+    }
+
+    .loader__circle--2 {
+        animation: shrinkAndFade 2s forwards 1s;
+    }
+
+    .loader__circle--3 {
+        animation: shrinkAndFade 2s forwards 1s;
+    }
+}
+
+@keyframes shrinkAndFade {
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 @keyframes end {

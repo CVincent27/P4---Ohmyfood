@@ -1,0 +1,66 @@
+// sauvegarde menus pref
+.menuitem {
+    display: flex;
+    width: 100%;
+
+    border-radius: 1rem;
+    background-color: #FFF;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+
+    box-shadow: $btn_shadow $shadow-color;
+
+    animation: itemappear .8s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    max-width: 100%;
+
+    &__header {
+        flex-basis: 0%;
+        min-width: 0;
+        flex-grow: 1;
+        padding: 1rem;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    &__done {
+        display: none;
+        width: 4rem;
+        transition: .5s;
+        background-color: $color-tertiary;
+        padding: 12px;
+    }
+
+    &:hover &__done {
+        margin-right: 0rem;
+    }
+
+    &__wrap {
+        @include flex-center;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: $white;
+        border-radius: 5rem;
+
+        transition-duration: 0.5s;
+    }
+
+    &:hover &__wrap {
+        transform: rotate(0);
+    }
+
+    &__icon {
+        color: $color-tertiary;
+    }
+}
