@@ -19,15 +19,9 @@
         border-radius: 25px;
         box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
 
-        &:focus-within {
+        :hover {
             .menuitem__done {
                 display: flex;
-            }
-        }
-
-        &:not(:active) {
-            .menuitem__done {
-                display: none;
             }
         }
 
@@ -36,42 +30,19 @@
             flex-direction: column;
         }
 
-        .menuitem {
+        .menu_infos {
             display: flex;
-            width: 100%;
-            border-radius: 1rem;
-            background-color: #FFF;
-            overflow: hidden;
-            margin-bottom: 1rem;
-            box-shadow: $btn_shadow $shadow-color;
+            gap: 15px;
+            align-items: center;
+        }
 
-            animation: itemappear .8s;
-            animation-delay: 2.5s;
-            animation-fill-mode: both;
-            max-width: 100%;
+        .menuitem__done {
+            display: none;
+            width: 4rem;
+            transition: .5s;
+            background-color: $color-tertiary;
+            padding: 12px;
 
-            &__done {
-                display: none;
-                width: 4rem;
-                transition: .5s;
-                background-color: $color-tertiary;
-                padding: 12px;
-            }
-
-            &__wrap {
-                @include flex-center;
-                width: 1.5rem;
-                height: 1.5rem;
-
-                background-color: $white;
-                border-radius: 5rem;
-
-                transition-duration: 0.5s;
-            }
-
-            &__icon {
-                color: $color-tertiary;
-            }
         }
     }
 }
