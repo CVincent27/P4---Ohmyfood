@@ -50,60 +50,6 @@ h6 {
   font-family: "Shrikhand", serif;
 }
 
-.menuitem {
-  display: flex;
-  width: 100%;
-  border-radius: 1rem;
-  background-color: #FFF;
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  box-shadow: 0rem 0.2rem 0.5rem 0.1rem #D5D5D5;
-  animation: itemappear 0.8s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
-  max-width: 100%;
-}
-.menuitem__header {
-  flex-basis: 0%;
-  min-width: 0;
-  flex-grow: 1;
-  padding: 1rem;
-}
-.menuitem__price {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 1rem;
-  font-weight: bold;
-}
-.menuitem__done {
-  display: none;
-  width: 4rem;
-  transition: 0.5s;
-  background-color: #99e2d0;
-  padding: 12px;
-}
-.menuitem:hover .menuitem__done {
-  margin-right: 0rem;
-}
-.menuitem__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #FFF;
-  border-radius: 5rem;
-  transition-duration: 0.5s;
-}
-.menuitem:hover .menuitem__wrap {
-  transform: rotate(0);
-}
-.menuitem__icon {
-  color: #99e2d0;
-}
-
 .explore__btn__box {
   display: flex;
   align-items: center;
@@ -433,6 +379,7 @@ h6 {
   width: 50px;
 }
 .menu__content .menu__card__food {
+  position: relative;
   display: flex;
   padding: 12px;
   background-color: #FFFFFF;
@@ -441,9 +388,48 @@ h6 {
   border-radius: 25px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
+.menu__content .menu__card__food:focus-within .menuitem__done {
+  display: flex;
+}
+.menu__content .menu__card__food:not(:active) .menuitem__done {
+  display: none;
+}
 .menu__content .menu__card__food .desc__flex {
   display: flex;
   flex-direction: column;
+}
+.menu__content .menu__card__food .menuitem {
+  display: flex;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #FFF;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0rem 0.2rem 0.5rem 0.1rem #D5D5D5;
+  animation: itemappear 0.8s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  max-width: 100%;
+}
+.menu__content .menu__card__food .menuitem__done {
+  display: none;
+  width: 4rem;
+  transition: 0.5s;
+  background-color: #99e2d0;
+  padding: 12px;
+}
+.menu__content .menu__card__food .menuitem__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #FFF;
+  border-radius: 5rem;
+  transition-duration: 0.5s;
+}
+.menu__content .menu__card__food .menuitem__icon {
+  color: #99e2d0;
 }
 
 .navbar__menu {
