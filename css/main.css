@@ -105,18 +105,7 @@ h6 {
   color: white;
 }
 
-.restaurants {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 15px 80px 15px;
-}
-.restaurants .restaurant__flex {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.restaurants .restaurant__flex .restaurant__card {
+.restaurant__card {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -124,7 +113,7 @@ h6 {
   border-radius: 20px;
   background-color: white;
 }
-.restaurants .restaurant__flex .restaurant__card .news__card {
+.restaurant__card .news__card {
   display: flex;
   position: absolute;
   right: 40px;
@@ -136,14 +125,14 @@ h6 {
   border-radius: 2px;
   margin: 13px 0;
 }
-.restaurants .restaurant__flex .restaurant__card img {
+.restaurant__card img {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 180px;
   object-fit: cover;
   object-position: center;
 }
-.restaurants .restaurant__flex .restaurant__card .cardContent {
+.restaurant__card .cardContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,7 +145,7 @@ h6 {
 }
 
 .hidden-checkbox:checked + .checkbox-label::before {
-  content: url("/assets/images/Icon/full-heart.svg");
+  content: url("/assets/images/Icon/heart_full.png");
 }
 
 .checkbox-label {
@@ -165,7 +154,7 @@ h6 {
   cursor: pointer;
 }
 .checkbox-label::before {
-  content: url("/assets/images/Icon/heart-empty2.svg");
+  content: url("/assets/images/Icon/heart_empty.png");
   display: block;
   width: 100%;
   height: 100%;
@@ -248,104 +237,6 @@ h6 {
   font-size: 30px;
 }
 
-.location {
-  background: #EAEAEA;
-}
-.location .location__box {
-  display: flex;
-  width: 100%;
-  height: 50px;
-  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
-  border-left: none;
-  border-right: none;
-  justify-content: center;
-  align-items: center;
-  gap: 17px;
-}
-.location .location__text {
-  color: #353535;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-}
-
-.explore {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #F6F6F6;
-  padding: 30px 0 40px;
-}
-.explore .explore__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-.explore .explore__box h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-.explore .explore__box h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
-  color: #353535;
-}
-
-.fonctionnement {
-  padding: 30px 15px;
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-}
-.fonctionnement .fonc__card__box {
-  width: 100%;
-}
-.fonctionnement .fonc__card__box .fonc__card {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__round {
-  position: relative;
-  right: 5px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9356DC;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  margin-right: 10px;
-  z-index: 1;
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
-  position: relative;
-  right: 30px;
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  background-color: #F6F6F6;
-  width: 100%;
-  border-radius: 25px;
-  z-index: 0;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h4 {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-  height: 70px;
-}
-
 .footer__box {
   color: white;
   width: 100%;
@@ -406,6 +297,116 @@ h6 {
   transition: 0.5s;
   background-color: #99e2d0;
   padding: 12px;
+}
+
+.location {
+  background: #EAEAEA;
+}
+.location .location__box {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
+  border-left: none;
+  border-right: none;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+.location .location__text {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F6F6F6;
+  padding: 30px 0 40px;
+}
+.explore .explore__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.explore .explore__box h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.explore .explore__box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  color: #353535;
+}
+
+.fonctionnement {
+  padding: 40px 15px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement .fonc__card__box {
+  width: 100%;
+}
+.fonctionnement .fonc__card__box .fonc__card {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.fonctionnement .fonc__card__box .fonc__card .fonc__round {
+  position: relative;
+  right: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  z-index: 1;
+}
+.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
+  position: relative;
+  right: 30px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  background-color: #F6F6F6;
+  width: 100%;
+  border-radius: 25px;
+  z-index: 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  height: 70px;
+}
+
+.restaurants {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px 80px 15px;
+}
+.restaurants .restaurant__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .navbar__menu {

@@ -1,9 +1,10 @@
+// case à cocher invisible
 .hidden-checkbox {
     display: none;
 }
 
 .hidden-checkbox:checked+.checkbox-label::before {
-    content: url('/assets/images/Icon/full-heart.svg');
+    content: url('/assets/images/Icon/heart_full.png');
 
 }
 
@@ -13,7 +14,7 @@
     cursor: pointer;
 
     &::before {
-        content: url('/assets/images/Icon/heart-empty2.svg');
+        content: url('/assets/images/Icon/heart_empty.png');
         display: block;
         width: 100%;
         height: 100%;
