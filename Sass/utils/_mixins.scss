@@ -7,7 +7,7 @@
 }
 
 @mixin button-shadow-hover {
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
 }
 
 @mixin flex-center {
@@ -17,12 +17,12 @@
 }
 
 @mixin btn-color {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(193deg, #9356DC -11%, #FF79DA 124%);
 
 }
 
 @mixin btn-color-hover {
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+    background: linear-gradient(193deg, #9F6AE3 -11%, #FF8CE2 124%);
+
 
 }

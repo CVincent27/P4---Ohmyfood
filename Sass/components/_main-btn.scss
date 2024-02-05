@@ -1,7 +1,7 @@
-.explore__btn__box {
+.btn__box {
     @include flex-center;
 
-    .explore__btn {
+    .btn__main {
         cursor: pointer;
         color: $white;
         @include flex-center;
@@ -19,7 +19,7 @@
             border-radius: 25px;
         }
 
-        .explore__btn__text {
+        .btn__text {
             display: flex;
             width: 100%;
             font-size: 16px;
@@ -28,6 +28,7 @@
             height: 50px;
             justify-content: center;
             align-items: center;
+            color: white;
         }
     }
 }

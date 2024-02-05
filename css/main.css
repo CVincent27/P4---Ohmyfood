@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -50,12 +51,12 @@ h6 {
   font-family: "Shrikhand", serif;
 }
 
-.explore__btn__box {
+.btn__box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.explore__btn__box .explore__btn {
+.btn__box .btn__main {
   cursor: pointer;
   color: #FFF;
   display: flex;
@@ -65,16 +66,16 @@ h6 {
   width: 70%;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193deg, #9356DC -11%, #FF79DA 124%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: all 400ms;
 }
-.explore__btn__box .explore__btn :hover {
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+.btn__box .btn__main :hover {
+  background: linear-gradient(193deg, #9F6AE3 -11%, #FF8CE2 124%);
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
   border-radius: 25px;
 }
-.explore__btn__box .explore__btn .explore__btn__text {
+.btn__box .btn__main .btn__text {
   display: flex;
   width: 100%;
   font-size: 16px;
@@ -83,6 +84,7 @@ h6 {
   height: 50px;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .command__btn__box {
@@ -268,6 +270,8 @@ h6 {
 .menu__content .menu__title__desc {
   border-bottom: 3px solid rgb(153, 226, 208);
   width: 50px;
+  font-size: 16px;
+  font-weight: 300;
 }
 .menu__content .menu__card__food {
   position: relative;
@@ -325,7 +329,7 @@ h6 {
   flex-direction: column;
   gap: 20px;
   background-color: #F6F6F6;
-  padding: 30px 0 40px;
+  padding: 30px 10px 40px;
 }
 .explore .explore__box {
   display: flex;
@@ -410,7 +414,6 @@ h6 {
 }
 
 .navbar__menu {
-  gap: 42px;
   padding: 14px 17px;
   justify-content: flex-start;
 }
@@ -420,7 +423,10 @@ h6 {
   padding: 0;
 }
 .navbar__menu .navbar__title {
+  display: flex;
+  width: 100%;
   font-weight: 700;
+  justify-content: center;
 }
 
 .menu__container {
@@ -433,6 +439,8 @@ h6 {
 }
 .menu__container .overlay {
   width: 100%;
+  position: absolute;
+  top: 280px;
 }
 .menu__container .overlay .menu__card {
   display: flex;
@@ -440,7 +448,7 @@ h6 {
   gap: 40px;
   background-color: #F6F6F6;
   border-radius: 25px;
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 40px 15px;
 }
 .menu__container .overlay .menu__card .menu__restau {
   width: 100%;
@@ -450,21 +458,5 @@ h6 {
 }
 .menu__container .overlay .menu__card .menu__restau .nom__restau {
   font-size: 28px;
-}
-.menu__container .overlay .menu__card .menu__restau .hidden-checkbox {
-  display: none;
-}
-.menu__container .overlay .menu__card .menu__restau .hidden-checkbox:checked + .checkbox-label::before {
-  content: url("/assets/images/Icon/full-heart.svg");
-}
-.menu__container .overlay .menu__card .menu__restau .checkbox-label {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-}
-.menu__container .overlay .menu__card .menu__restau .checkbox-label::before {
-  content: url("/assets/images/Icon/heart.svg");
-  display: block;
-  width: 100%;
-  height: 100%;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
