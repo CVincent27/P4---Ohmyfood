@@ -162,73 +162,6 @@ h6 {
   height: 100%;
 }
 
-.loader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-.loader__circle--1 {
-  width: 7rem;
-  height: 7rem;
-  border-radius: 5rem;
-  border: 0.4rem solid transparent;
-  border-top-color: #9356dc;
-  animation: spin 1s linear infinite;
-  position: absolute;
-  margin: auto;
-}
-.loader__circle--2 {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 5rem;
-  border: 0.4rem solid transparent;
-  border-top-color: #ff79da;
-  animation: spin 1.25s linear infinite;
-  position: absolute;
-  margin: auto;
-}
-.loader__circle--3 {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 5rem;
-  border: 0.4rem solid transparent;
-  border-top-color: #99e2d0;
-  animation: spin 1.5s linear infinite;
-  position: absolute;
-  margin: auto;
-}
-
-.disappear {
-  animation: end 1s forwards;
-  animation-delay: 2s;
-}
-.disappear .loader__circle--1 {
-  animation: shrinkAndFade 2s forwards 1s;
-}
-.disappear .loader__circle--2 {
-  animation: shrinkAndFade 2s forwards 1s;
-}
-.disappear .loader__circle--3 {
-  animation: shrinkAndFade 2s forwards 1s;
-}
-
-@keyframes shrinkAndFade {
-  to {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-@keyframes end {
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
 .navbar {
   padding: 15px 90px;
   display: flex;
@@ -274,33 +207,52 @@ h6 {
   font-weight: 300;
 }
 .menu__content .menu__card__food {
+  overflow: hidden;
   position: relative;
   display: flex;
-  padding: 12px;
   background-color: #FFFFFF;
   justify-content: space-between;
   align-items: flex-end;
   border-radius: 25px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
-.menu__content .menu__card__food :hover .menuitem__done {
+.menu__content .menu__card__food .flex__content {
   display: flex;
+  padding: 0px 12px 14px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.menu__content .menu__card__food .desc__flex {
+.menu__content .menu__card__food .flex__content .menu__desc {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu__content .menu__card__food .menu_infos {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+.menu__content .menu__card__food .flex__content .menu__desc h3 {
+  font-weight: 500;
 }
-.menu__content .menu__card__food .menuitem__done {
-  display: none;
-  width: 4rem;
-  transition: 0.5s;
+.menu__content .menu__card__food .flex__content .menu__desc h4 {
+  font-size: 15px;
+}
+.menu__content .menu__card__food .flex__content .menu__prix {
+  margin-left: auto;
+  margin-top: 20px;
+}
+.menu__content .menu__card__food .menu__check {
   background-color: #99e2d0;
-  padding: 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  padding: 25px;
+  margin-right: -8rem;
+  width: 2rem;
+  transition: margin-right 0.5s;
+}
+.menu__card__food:hover .menu__check {
+  margin-right: 0;
+  height: 100%;
 }
 
 .location {
@@ -429,20 +381,21 @@ h6 {
   justify-content: center;
 }
 
-.menu__container {
+.menu {
   width: 100%;
+  overflow: hidden;
 }
-.menu__container .img__restau {
+.menu .img__restau {
   width: 100%;
   height: 275px;
   object-fit: cover;
 }
-.menu__container .overlay {
+.menu .overlay {
   width: 100%;
   position: absolute;
   top: 280px;
 }
-.menu__container .overlay .menu__card {
+.menu .overlay .menu__card {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -450,13 +403,13 @@ h6 {
   border-radius: 25px;
   padding: 15px 15px 40px 15px;
 }
-.menu__container .overlay .menu__card .menu__restau {
+.menu .overlay .menu__card .menu__restau {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu__container .overlay .menu__card .menu__restau .nom__restau {
+.menu .overlay .menu__card .menu__restau .nom__restau {
   font-size: 28px;
   font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

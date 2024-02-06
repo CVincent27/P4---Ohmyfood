@@ -18,8 +18,9 @@
 }
 
 // Main menu
-.menu__container {
+.menu {
     width: 100%;
+    overflow: hidden;
 
     .img__restau {
         width: 100%;
