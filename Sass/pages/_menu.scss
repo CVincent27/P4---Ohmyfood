@@ -1,19 +1,13 @@
 // header
 .navbar__menu {
+    display: flex;
+    align-items: center;
     padding: 14px 17px;
-    justify-content: flex-start;
 
     .btn__goback {
         border: none;
         background: none;
         padding: 0;
-    }
-
-    .navbar__title {
-        display: flex;
-        width: 100%;
-        font-weight: 700;
-        justify-content: center;
     }
 }
 

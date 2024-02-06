@@ -1,12 +1,14 @@
 // Barre de nav
 .navbar {
-	padding: 15px 90px;
+	padding: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	.navbar__title {
-		font-size: 30px
+		margin-left: auto;
+		margin-right: auto;
+		height: 44px;
 	}
-}
 
+}
