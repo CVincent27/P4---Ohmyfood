@@ -1,0 +1,21 @@
+// Utils
+@import "../utils/variables";
+@import "../utils/mixins";
+
+// Base
+@import "../base/base";
+@import "../base/typo";
+
+// Components
+@import "../components/main-btn";
+@import "../components/cards";
+@import "../components/new_card";
+@import "../components/heart_icon";
+
+// Layout
+@import "../layout/header";
+@import "../layout/location";
+@import "../layout/explore";
+@import "../layout/fonctionnement";
+@import "../layout/restaurants";
+@import "../layout/footer"

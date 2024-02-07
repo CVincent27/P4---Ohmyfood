@@ -1,0 +1,54 @@
+// Section fonctionnement
+.fonctionnement {
+    padding: 40px 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+    .fonc__card__box {
+        width: 100%;
+
+        .fonc__card {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .fonc__round {
+                position: relative;
+                right: 5px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #9356DC;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                margin-right: 10px;
+                z-index: 1;
+            }
+
+            .fonc__card__clickable {
+                position: relative;
+                right: 30px;
+                display: flex;
+                gap: 25px;
+                justify-content: center;
+                background-color: #F6F6F6;
+                width: 100%;
+                border-radius: 25px;
+                z-index: 0;
+                box-shadow: 0px 4px 15px 0px #00000026;
+
+                h4 {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
