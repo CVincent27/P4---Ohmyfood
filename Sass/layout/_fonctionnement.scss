@@ -30,11 +30,9 @@
             }
 
             .fonc__card__clickable {
-                position: relative;
-                right: 30px;
                 display: flex;
                 gap: 25px;
-                justify-content: center;
+                justify-content: flex-start;
                 background-color: #F6F6F6;
                 width: 100%;
                 border-radius: 25px;
