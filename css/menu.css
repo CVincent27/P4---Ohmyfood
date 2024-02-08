@@ -65,11 +65,11 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 70%;
+  width: 65%;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11%, #FF79DA 124%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   transition: all 400ms;
 }
 .btn__main :hover {
@@ -128,7 +128,8 @@ h6 {
 .menu .img__restau {
   width: 100%;
   height: 275px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .menu .overlay {
   width: 100%;
@@ -215,30 +216,31 @@ h6 {
 }
 
 .location {
-  background: #EAEAEA;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  width: 100%;
+}
+.location__box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.location__input__box {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-.location__input__box .location__logo {
+.location__box__logo {
   width: 12px;
-  margin-right: 10px;
 }
-.location__input__box .location__input {
-  background-color: #EAEAEA;
+.location__box__input {
   border: none;
-  flex: 1;
-  height: 100%;
+  height: 50px;
+  width: 80%;
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   outline: none;
-  color: red;
+  text-align: center;
 }
 
 .explore {
@@ -291,7 +293,6 @@ h6 {
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__round {
   position: relative;
-  right: 5px;
   color: white;
   display: flex;
   align-items: center;
@@ -300,19 +301,19 @@ h6 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  margin-right: 10px;
   z-index: 1;
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
-  position: relative;
-  right: 30px;
+  left: -5px;
   display: flex;
+  position: relative;
   gap: 25px;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #F6F6F6;
   width: 100%;
   border-radius: 25px;
   z-index: 0;
+  padding-left: 42px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h4 {
@@ -327,7 +328,8 @@ h6 {
   gap: 20px;
   display: flex;
   flex-direction: column;
-  padding: 50px 15px 80px 15px;
+  padding: 40px 15px 80px 15px;
+  background-color: #F6F6F6;
 }
 .restaurants .restaurant__flex {
   display: flex;
