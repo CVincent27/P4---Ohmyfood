@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&family=Shrikhand&display=swap");
 * {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -16,33 +17,29 @@ ul {
   font-weight: 500;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 h1 {
-  font-family: "Shrikhand", serif;
-}
-
-h2 {
   font-size: 24px;
   font-weight: 700;
 }
 
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h4 {
   font-size: 18px;
   font-weight: 700;
 }
 
-h4 {
+h5 {
   font-size: 17px;
   font-weight: 300;
-}
-
-h5 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #008766;
 }
 
 h6 {
@@ -104,7 +101,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 13px 0 13px;
+  padding: 13px 13px 13px 13px;
   color: black;
 }
 
@@ -119,6 +116,11 @@ h6 {
   align-items: center;
   border-radius: 2px;
   margin: 13px 0;
+}
+.news__card span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
 }
 
 .hidden-checkbox {
@@ -146,6 +148,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .navbar .navbar__title {
   margin-left: auto;
@@ -161,6 +164,7 @@ h6 {
   height: 50px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   width: 100%;
+  background: #EAEAEA;
 }
 .location__box {
   display: flex;
@@ -179,6 +183,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   outline: none;
   text-align: center;
+  background: #EAEAEA;
 }
 
 .explore {
@@ -186,7 +191,7 @@ h6 {
   flex-direction: column;
   gap: 20px;
   background-color: #F6F6F6;
-  padding: 30px 10px 40px;
+  padding: 50px 10px 40px;
 }
 .explore .explore__box {
   display: flex;
@@ -240,6 +245,8 @@ h6 {
   height: 24px;
   border-radius: 50%;
   z-index: 1;
+  font-size: 14px;
+  font-weight: 500;
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
   left: -5px;
@@ -254,11 +261,9 @@ h6 {
   padding-left: 42px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
-.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h4 {
+.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h3 {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 16px;
   height: 70px;
 }
 
