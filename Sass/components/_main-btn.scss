@@ -3,7 +3,6 @@
     color: $white;
     @include flex-center;
     height: 50px;
-    width: 65%;
     border: none;
     border-radius: 25px;
     @include btn-color;
@@ -23,6 +22,7 @@
         font-weight: 500;
         font-family: $font-primary;
         height: 50px;
+        padding: 0 20px;
         justify-content: center;
         align-items: center;
         color: white;

@@ -62,7 +62,6 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 65%;
   border: none;
   border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -81,6 +80,7 @@ h6 {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   height: 50px;
+  padding: 0 20px;
   justify-content: center;
   align-items: center;
   color: white;
@@ -154,7 +154,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .navbar .navbar__title {
   margin-left: auto;
@@ -231,7 +230,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #353535;
 }
 .explore .explore__box h3 {
   display: flex;

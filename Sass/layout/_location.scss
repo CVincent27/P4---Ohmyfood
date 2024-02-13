@@ -1,19 +1,15 @@
 // Section location
 .location {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     height: 50px;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    @include box-shadow;
     width: 100%;
     background: $grey-2;
 
 
     &__box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
 
         &__logo {
             width: 12px;
@@ -30,6 +26,7 @@
             outline: none;
             text-align: center;
             background: $grey-2;
+            color: $grey;
 
             
 
