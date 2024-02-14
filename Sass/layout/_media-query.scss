@@ -1,8 +1,8 @@
-/* Media query pour les ordinateurs de bureau */
+/* Media query*/
 @media only screen and (min-width: 1024px) {
 
 	.explore {
-		.explore__box h2 {
+		.explore__box h1 {
 			width: 100%;
 			font-size: 40px;
 		} 
@@ -15,7 +15,7 @@
 	}
 
 	.fonctionnement {
-		padding: 30px 50px;
+		padding: 50px 180px;
 		.fonc__card__box {
 			width: 100%;
 			display: flex;
@@ -23,15 +23,18 @@
 	}
 
 	.restaurants {
-		padding: 30px 50px;
+		padding: 30px 180px;
+		gap: 28px;
 
-		.restaurant__card__flex {
+		.restaurant__flex {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			gap: 50px;
 			.restaurant__card {
 				width: 45%;
+				margin: 0;
 			}
 		}
 	}

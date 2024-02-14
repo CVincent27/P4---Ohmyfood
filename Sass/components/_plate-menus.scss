@@ -10,7 +10,7 @@
 
     .flex__content {
         display: flex;
-        padding: 0px 12px 14px;
+        padding: 15px;
         width: 90%;
         justify-content: space-between;
         align-items: flex-end;
@@ -39,6 +39,7 @@
             h5 {
                 font-size: 15px;
                 font-weight: 700;
+                color: $grey;
             }
         }
     }
@@ -50,14 +51,15 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: white;
-        padding: 25px;
+        padding: 35px 25px;
         margin-right: -8rem;
-        width: 0.5rem;
+        width: auto;
         transition: margin-right 0.5s;
 
         @at-root .menu__card__food:hover .menu__check {
             margin-right: 0;
             height: 100%;
+            width: 0.5em;
         }
     }
 

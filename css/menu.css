@@ -115,7 +115,7 @@ h6 {
 }
 .menu__card__food .flex__content {
   display: flex;
-  padding: 0px 12px 14px;
+  padding: 15px;
   width: 90%;
   justify-content: space-between;
   align-items: flex-end;
@@ -142,6 +142,7 @@ h6 {
 .menu__card__food .flex__content .menu__prix h5 {
   font-size: 15px;
   font-weight: 700;
+  color: #353535;
 }
 .menu__card__food .menu__check {
   display: flex;
@@ -150,14 +151,15 @@ h6 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color: white;
-  padding: 25px;
+  padding: 35px 25px;
   margin-right: -8rem;
-  width: 0.5rem;
+  width: auto;
   transition: margin-right 0.5s;
 }
 .menu__card__food:hover .menu__check {
   margin-right: 0;
   height: 100%;
+  width: 0.5em;
 }
 
 .navbar {
@@ -259,16 +261,19 @@ h6 {
 }
 
 .fonctionnement {
-  padding: 40px 15px;
+  padding: 50px 15px;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
+  gap: 25px;
 }
 .fonctionnement .fonc__card__box {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .fonctionnement .fonc__card__box .fonc__card {
-  margin-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -341,4 +346,50 @@ h6 {
 .footer__box .footer__content .footer__list .footer__list__flex {
   display: flex;
   gap: 10px;
+}
+
+/* Media query*/
+@media only screen and (min-width: 1024px) {
+  .explore .explore__box h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .explore .explore__btn__box .explore__btn {
+    width: 25%;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement .fonc__card__box {
+    width: 100%;
+    display: flex;
+  }
+  .restaurants {
+    padding: 30px 180px;
+    gap: 28px;
+  }
+  .restaurants .restaurant__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .restaurants .restaurant__flex .restaurant__card {
+    width: 45%;
+    margin: 0;
+  }
+  .footer__box .footer__content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 110px;
+    gap: 40px;
+  }
+  .footer__box .footer__content .footer__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=menu.css.map */
