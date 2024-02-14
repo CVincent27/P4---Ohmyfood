@@ -5,7 +5,7 @@
     background-color: #FFFFFF;
     justify-content: space-between;
     align-items: flex-end;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
 
     .flex__content {
@@ -21,22 +21,38 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h4 {
+                font-size: 15px;
+                font-weight: 300;
+            }
         }
 
         .menu__prix {
             margin-left: auto;
             margin-top: 20px;
+
+            h5 {
+                font-size: 15px;
+                font-weight: 700;
+            }
         }
     }
 
     .menu__check {
-        background-color: #99e2d0;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: $color-tertiary;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         color: white;
         padding: 25px;
         margin-right: -8rem;
-        width: 2rem;
+        width: 0.5rem;
         transition: margin-right 0.5s;
 
         @at-root .menu__card__food:hover .menu__check {

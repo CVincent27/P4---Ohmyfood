@@ -1,16 +1,14 @@
 // Section restau
 .restaurants {
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     padding: 40px 15px 80px 15px;
-    background-color: #F6F6F6;
+    background-color: $light-gray;
 
     .restaurant__flex {
         display: flex;
         flex-direction: column;
         gap: 18px;
-
-
     }
 }

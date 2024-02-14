@@ -1,12 +1,10 @@
 .news__card {
-    display: flex;
     position: absolute;
     right: 30px;
     background-color: $color-tertiary;
     width: 80px;
     height: 30px;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     border-radius: 2px;
     margin: 13px 0;
 

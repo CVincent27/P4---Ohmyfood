@@ -1,7 +1,7 @@
 // Section fonctionnement
 .fonctionnement {
     padding: 40px 15px;
-    background-color: #FFFFFF;
+    background-color: $white;
     display: flex;
     flex-direction: column;
 
@@ -16,13 +16,15 @@
 
             .fonc__round {
                 position: relative;
-                color: white;
+                color: $white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #9356DC;
+                background-color: $color-Primary;
                 width: 24px;
+                min-width: 24px;
                 height: 24px;
+                min-height: 24px;
                 border-radius: 50%;
                 z-index: 1;
                 font-size: 14px;
@@ -30,12 +32,12 @@
             }
 
             .fonc__card__clickable {
-                left: -5px;
+                left: -15px;
                 display: flex;
                 position: relative;
                 gap: 25px;
                 justify-content: flex-start;
-                background-color: #F6F6F6;
+                background-color: $light-gray;
                 width: 100%;
                 border-radius: 25px;
                 z-index: 0;

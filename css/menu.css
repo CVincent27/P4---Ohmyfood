@@ -57,32 +57,29 @@ h6 {
 
 .btn__main {
   cursor: pointer;
-  color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  transition: all 400ms;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 .btn__main :hover {
-  background: linear-gradient(193deg, #9F6AE3 -11%, #FF8CE2 124%);
-  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
   border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  color: #FFF;
 }
 .btn__main .btn__text {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  height: 50px;
-  padding: 0 20px;
-  justify-content: center;
-  align-items: center;
+  padding: 16px 19px;
   color: white;
 }
 
@@ -113,7 +110,7 @@ h6 {
   background-color: #FFFFFF;
   justify-content: space-between;
   align-items: flex-end;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
 .menu__card__food .flex__content {
@@ -130,18 +127,32 @@ h6 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu__card__food .flex__content .menu__desc h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu__card__food .flex__content .menu__desc h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
 .menu__card__food .flex__content .menu__prix {
   margin-left: auto;
   margin-top: 20px;
 }
+.menu__card__food .flex__content .menu__prix h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
 .menu__card__food .menu__check {
+  display: flex;
+  justify-content: center;
   background-color: #99e2d0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
   padding: 25px;
   margin-right: -8rem;
-  width: 2rem;
+  width: 0.5rem;
   transition: margin-right 0.5s;
 }
 .menu__card__food:hover .menu__check {
@@ -191,6 +202,7 @@ h6 {
   align-items: center;
 }
 .menu .overlay .menu__card .menu__restau .nom__restau {
+  font-family: "Shrikhand", serif;
   font-size: 28px;
   font-weight: 400;
 }
@@ -202,7 +214,8 @@ h6 {
 }
 .menu .overlay .menu__card .menu__content .menu__title__desc {
   border-bottom: 3px solid rgb(153, 226, 208);
-  width: 50px;
+  width: 40px;
+  height: 27px;
   font-size: 16px;
   font-weight: 300;
 }
@@ -216,7 +229,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 50px 10px 40px;
 }
 .explore .explore__box {
@@ -247,7 +260,7 @@ h6 {
 
 .fonctionnement {
   padding: 40px 15px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
 }
@@ -262,25 +275,27 @@ h6 {
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__round {
   position: relative;
-  color: white;
+  color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9356DC;
+  background-color: #9356dc;
   width: 24px;
+  min-width: 24px;
   height: 24px;
+  min-height: 24px;
   border-radius: 50%;
   z-index: 1;
   font-size: 14px;
   font-weight: 500;
 }
 .fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
-  left: -5px;
+  left: -15px;
   display: flex;
   position: relative;
   gap: 25px;
   justify-content: flex-start;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 100%;
   border-radius: 25px;
   z-index: 0;
@@ -294,11 +309,11 @@ h6 {
 }
 
 .restaurants {
-  gap: 20px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   padding: 40px 15px 80px 15px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .restaurants .restaurant__flex {
   display: flex;

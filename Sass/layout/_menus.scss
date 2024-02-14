@@ -30,6 +30,7 @@
                 align-items: center;
 
                 .nom__restau {
+                    font-family: $font-secondary;
                     font-size: 28px;
                     font-weight: 400;
                 }
@@ -43,7 +44,8 @@
             
                 .menu__title__desc {
                     border-bottom: 3px solid rgba(153, 226, 208, 1);
-                    width: 50px;
+                    width: 40px;
+                    height: 27px;
                     font-size: 16px;
                     font-weight: 300;
                 }
