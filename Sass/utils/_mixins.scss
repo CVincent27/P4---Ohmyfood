@@ -27,3 +27,8 @@
 @mixin btn-color-hover {
     background: linear-gradient(193deg, #9F6AE3 -11%, #FF8CE2 124%);
 }
+
+@mixin gradient($degree) {
+    background: $color-Primary;
+    background:linear-gradient(($degree), $color-Primary 25%, $color-secondary 100%);
+}
