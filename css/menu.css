@@ -45,7 +45,6 @@ h5 {
 h6 {
   font-size: 18px;
   font-weight: 400;
-  font-style: italic;
   font-family: "Shrikhand", serif;
 }
 
@@ -83,24 +82,21 @@ h6 {
   color: white;
 }
 
-.hidden-checkbox {
-  display: none;
-}
-
-.hidden-checkbox:checked + .checkbox-label::before {
-  content: url("/assets/images/Icon/heart_full.png");
-}
-
-.checkbox-label {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-}
-.checkbox-label::before {
-  content: url("/assets/images/Icon/heart_empty.png");
-  display: block;
+.heart-animation {
+  height: auto;
   width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.heart-animation .heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.heart-animation .heart-full:hover {
+  opacity: 1;
+  color: red;
 }
 
 .menu__card__food {
@@ -198,7 +194,7 @@ h6 {
   padding: 25px 15px 40px 15px;
 }
 .menu .overlay .menu__card .menu__restau {
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,105 +221,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.explore {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: #f6f6f6;
-  padding: 50px 10px 40px;
-}
-.explore .explore__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-.explore .explore__box h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #353535;
-}
-.explore .explore__box h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
-  color: #353535;
-}
-.explore .btn__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fonctionnement {
-  padding: 50px 15px;
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.fonctionnement .fonc__card__box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.fonctionnement .fonc__card__box .fonc__card {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__round {
-  position: relative;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #9356dc;
-  width: 24px;
-  min-width: 24px;
-  height: 24px;
-  min-height: 24px;
-  border-radius: 50%;
-  z-index: 1;
-  font-size: 14px;
-  font-weight: 500;
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable {
-  left: -15px;
-  display: flex;
-  position: relative;
-  gap: 25px;
-  justify-content: flex-start;
-  background-color: #f6f6f6;
-  width: 100%;
-  border-radius: 25px;
-  z-index: 0;
-  padding-left: 42px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-}
-.fonctionnement .fonc__card__box .fonc__card .fonc__card__clickable h3 {
-  display: flex;
-  align-items: center;
-  height: 70px;
-}
-
-.restaurants {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 40px 15px 80px 15px;
-  background-color: #f6f6f6;
-}
-.restaurants .restaurant__flex {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 
 .footer__box {
@@ -369,7 +266,6 @@ h6 {
     width: 70%;
   }
   .footer__box .footer__content {
-    display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     gap: 40px;
