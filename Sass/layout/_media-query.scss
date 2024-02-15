@@ -2,6 +2,7 @@
 @media only screen and (min-width: 1024px) {
 
 	.explore {
+		padding: 30px 0;
 		.explore__box h1 {
 			width: 100%;
 			font-size: 40px;
@@ -19,6 +20,7 @@
 		.fonc__card__box {
 			width: 100%;
 			display: flex;
+			flex-direction: row;
 		}
 	}
 
@@ -32,7 +34,9 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			gap: 50px;
+
 			.restaurant__card {
+				position: relative;
 				width: 45%;
 				margin: 0;
 			}
@@ -44,13 +48,14 @@
 				display: flex;
 				flex-direction: row-reverse;
 				align-items: flex-end;
-				height: 110px;
 				gap: 40px;
+				padding: 30px 25px 15px;
 			.footer__list {
 				display: flex;
 					flex-direction: row;
 					align-items: flex-end;
 					justify-content: flex-start;
+					gap: 10px;
 			}
 		}
 	}

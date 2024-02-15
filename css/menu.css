@@ -79,7 +79,7 @@ h6 {
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  padding: 16px 19px;
+  padding: 20px;
   color: white;
 }
 
@@ -180,14 +180,14 @@ h6 {
 }
 .menu .img__restau {
   width: 100%;
-  height: 280px;
+  height: 310px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .menu .overlay {
   width: 100%;
   position: absolute;
-  top: 280px;
+  top: 350px;
 }
 .menu .overlay .menu__card {
   display: flex;
@@ -348,48 +348,38 @@ h6 {
   gap: 10px;
 }
 
-/* Media query*/
+/* Media query */
 @media only screen and (min-width: 1024px) {
-  .explore .explore__box h1 {
-    width: 100%;
-    font-size: 40px;
-  }
-  .explore .explore__btn__box .explore__btn {
-    width: 25%;
-  }
-  .fonctionnement {
-    padding: 50px 180px;
-  }
-  .fonctionnement .fonc__card__box {
-    width: 100%;
+  .menu .overlay {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .restaurants {
-    padding: 30px 180px;
-    gap: 28px;
+  .menu .overlay .menu__card {
+    padding: 50px 30px;
+    width: 70%;
+    flex-wrap: nowrap;
+    align-items: center;
   }
-  .restaurants .restaurant__flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 50px;
+  .menu .overlay .menu__card .menu__restau {
+    justify-content: center;
+    gap: 30px;
   }
-  .restaurants .restaurant__flex .restaurant__card {
-    width: 45%;
-    margin: 0;
+  .menu .overlay .menu__card .menu__content {
+    width: 70%;
   }
   .footer__box .footer__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    height: 110px;
     gap: 40px;
+    padding: 30px 25px 15px;
   }
   .footer__box .footer__content .footer__list {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
+    gap: 10px;
   }
 }/*# sourceMappingURL=menu.css.map */

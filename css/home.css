@@ -73,7 +73,7 @@ h6 {
   font-size: 16px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  padding: 16px 19px;
+  padding: 20px;
   color: white;
 }
 
@@ -305,6 +305,9 @@ h6 {
 
 /* Media query*/
 @media only screen and (min-width: 1024px) {
+  .explore {
+    padding: 30px 0;
+  }
   .explore .explore__box h1 {
     width: 100%;
     font-size: 40px;
@@ -318,6 +321,7 @@ h6 {
   .fonctionnement .fonc__card__box {
     width: 100%;
     display: flex;
+    flex-direction: row;
   }
   .restaurants {
     padding: 30px 180px;
@@ -331,6 +335,7 @@ h6 {
     gap: 50px;
   }
   .restaurants .restaurant__flex .restaurant__card {
+    position: relative;
     width: 45%;
     margin: 0;
   }
@@ -338,13 +343,14 @@ h6 {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    height: 110px;
     gap: 40px;
+    padding: 30px 25px 15px;
   }
   .footer__box .footer__content .footer__list {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
+    gap: 10px;
   }
 }/*# sourceMappingURL=home.css.map */
