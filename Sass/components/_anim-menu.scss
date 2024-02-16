@@ -1,0 +1,29 @@
+// Entrée
+.entrees-anim {
+    opacity: 0;
+    animation: leftTransi 2s ease forwards;
+}
+  
+//   Plats
+.plats-anim {
+  opacity: 0;
+  animation: leftTransi 2s ease forwards 1000ms;
+}
+
+// Desserts
+.desserts-anim {
+    opacity: 0;
+    animation: leftTransi 2s ease forwards 1500ms;
+}
+
+@keyframes leftTransi {
+    from {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+  

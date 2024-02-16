@@ -54,12 +54,11 @@
         padding: 35px 25px;
         margin-right: -8rem;
         width: auto;
-        transition: margin-right 0.5s;
+        transition: margin-right 0.3s;
 
         @at-root .menu__card__food:hover .menu__check {
             margin-right: 0;
             height: 100%;
-            width: 0.5em;
         }
     }
 
