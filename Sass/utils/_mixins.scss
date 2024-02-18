@@ -1,18 +1,19 @@
-@mixin input-shadow {
-    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.25);
-}
-
-@mixin button-shadow {
-    box-shadow: 0px 4px 10px 0px #00000040;
-}
-
 @mixin box-shadow {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-@mixin button-shadow-hover {
-    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
+@mixin button-prop {
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
+
+@mixin button-hover-prop {
+    border-radius: 25px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
 
 @mixin flex-center {
     display: flex;
@@ -20,14 +21,8 @@
     justify-content: center;
 }
 
-@mixin btn-color {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
 
-@mixin btn-color-hover {
-    background: linear-gradient(193deg, #9F6AE3 -11%, #FF8CE2 124%);
-}
-
+// gradient btn
 @mixin gradient($degree) {
     background: $color-Primary;
     background:linear-gradient(($degree), $color-Primary 25%, $color-secondary 100%);
