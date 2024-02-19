@@ -275,12 +275,16 @@ h6 {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
   padding: 50px 15px 80px 15px;
   background-color: #f6f6f6;
 }
 .restaurants .restaurant__flex {
   display: flex;
   flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
   gap: 18px;
 }
 
