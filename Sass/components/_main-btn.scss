@@ -1,26 +1,20 @@
-.btn__main {
+.btn__box {
+  &__main {
     cursor: pointer;
     @include flex-center;
     border: none;
     @include button-prop;
-    // transition: background 2000ms;
+    padding: 15px 20px;
 
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font-primary;
+    color: $white;
 
-
-    :hover {
-        @include button-hover-prop;
-        color: $white;
-        // transition: background 2000ms;
-        
-        
+    &:hover {
+        opacity: 0.7;
     }
-
-    .btn__text {
-        @include flex-center;
-        width: 100%;
-        font-size: 16px;
-        font-weight: 500;
-        font-family: $font-primary;
-        padding: 15px;
-    }
+  }
 }
