@@ -48,6 +48,19 @@ h6 {
   font-family: "Shrikhand", serif;
 }
 
+.btn__goback {
+  display: flex;
+  border: none;
+  background: none;
+  padding: 0;
+  position: absolute;
+  left: 15px;
+}
+
+.btn__goback__desktop {
+  display: none;
+}
+
 .btn__box__main {
   cursor: pointer;
   display: flex;
@@ -57,7 +70,7 @@ h6 {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 .btn__box__text {
   font-size: 16px;
@@ -138,7 +151,7 @@ h6 {
 }
 
 .navbar {
-  padding: 15px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +159,6 @@ h6 {
 .navbar .navbar__title {
   margin-left: auto;
   margin-right: auto;
-  height: 44px;
 }
 
 .location {
@@ -193,17 +205,11 @@ h6 {
   text-align: center;
   gap: 20px;
 }
-.explore .explore__box h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #353535;
+.explore .explore__box h1 {
+  width: 75%;
 }
-.explore .explore__box h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
+.explore .explore__box h2 {
+  width: 90%;
   color: #353535;
 }
 .explore .btn__box {

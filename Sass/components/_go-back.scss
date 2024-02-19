@@ -1,5 +1,12 @@
 .btn__goback {
+    display: flex;
     border: none;
     background: none;
     padding: 0;
+    position: absolute;
+    left: 15px;
+}
+
+.btn__goback__desktop {
+    display: none;
 }

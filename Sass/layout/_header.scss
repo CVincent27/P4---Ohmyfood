@@ -1,12 +1,11 @@
 // Barre de nav
 .navbar {
-	padding: 15px;
+	padding: 15px 20px;
 	@include flex-center;
 
 	.navbar__title {
 		margin-left: auto;
 		margin-right: auto;
-		height: 44px;
 	}
 
 }

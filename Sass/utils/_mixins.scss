@@ -27,7 +27,7 @@
 }
 
 
-// gradient btn
+// gradient heart icon
 @mixin gradient($degree) {
     background: $color-Primary;
     background:linear-gradient(($degree), $color-Primary 25%, $color-secondary 100%);
