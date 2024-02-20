@@ -28,8 +28,8 @@
         <img class="img__restau" src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
         <div class="overlay">
             <div class="menu__card">
-                <div class="menu__restau">
-                    <h1 class="nom__restau">La palette du goût</h1>
+                <div class="menu__card__restau">
+                    <h1 class="menu__card__restau-nom">La palette du goût</h1>
                     <div class="heart">
                         <i class="fa-heart fas"></i>
                         <i class="fa-heart far"></i>
@@ -39,24 +39,22 @@
                 <div class="menu__content entrees-anim">
                     <h2 class="menu__title__desc">ENTRÉES</h2>
 
-                    <form autocomplete="off">
-                        <label class="menu__card__food">
-                            <input type="checkbox" class="hidden">
-                            <span class="food__content">
-                                <span class="food__content__title">
-                                    Fricassée d'escargots</span>
-                                <span class="food__content__subtitle">
-                                    Au piment d'Espelette
-                                </span>
-                            </span>
-                            <span class="food__price">
-                                25€
-                            </span>
-                            <span class="menu__check">
-                                <i class="fa-solid fa-circle-check fa-lg"></i>
-                            </span>
-                        </label>
-                    </form>
+                    <div class="restaurant__menu--cards-content">
+                        <div class="restaurant__menu--cards-content-description">
+                            <h3>Fricassée d'escargots</h3>
+                            <p>Au piment d'Espelette</p>
+                        </div>
+                        <div class="restaurant__menu--cards-content-price">
+                            <p>25€</p>
+                        </div>
+                        <div>
+                            <label for="entrees1"></label>
+                            <input type="checkbox" id="entrees1">
+                            <div class="restaurant__menu--cards-content-check">
+                            <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div> 
+                    </div>
 
                     <div class="menu__card__food">
                         <div class="flex__content">

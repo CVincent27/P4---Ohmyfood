@@ -129,62 +129,74 @@ h6 {
   opacity: 1;
 }
 
-.menu__card__food {
-  overflow: hidden;
-  position: relative;
+.restaurant__menu--cards-content {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.restaurant__menu--cards-content-description {
   display: flex;
-  background-color: #FFF;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  width: 100%;
+  overflow: hidden;
 }
-.menu__card__food .hidden {
-  display: none;
+.restaurant__menu--cards-content-description h3 {
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu__card__food .food__content {
+.restaurant__menu--cards-content-description p {
+  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurant__menu--cards-content-price {
   display: flex;
   padding: 15px;
-  width: 90%;
-  justify-content: space-between;
-  align-items: flex-end;
 }
-.menu__card__food .food__content .food__content__title {
-  font-size: 18px;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__card__food .food__content .food__content__subtitle {
-  font-size: 15px;
-  font-weight: 300;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__card__food .food__price {
+.restaurant__menu--cards-content-price p {
   display: flex;
-  align-self: flex-end;
-  padding-bottom: 15px;
-  font-weight: 700;
+  align-items: end;
+  margin: 0;
   font-size: 15px;
-  transition: margin 800ms ease-in-out;
+  font-weight: 700;
 }
-.menu__card__food .menu__check {
+.restaurant__menu--cards-content-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+.restaurant__menu--cards-content-check i {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 3px;
+  background: white;
+}
+.restaurant__menu--cards-content label {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -70px;
-  width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #99E2D0;
-  color: rgb(255, 255, 255);
-  transition: transform 800ms ease-in-out;
+  right: 0;
+  left: 0;
 }
-.menu__card__food .menu__check .fa-circle-check {
-  transition: transform 1s ease-in-out;
-  animation: spinningOut 1s ease-in-out;
+.restaurant__menu--cards-content input {
+  display: none;
+}
+.restaurant__menu--cards-content input:checked + div {
+  width: 75px;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .navbar {
@@ -222,13 +234,13 @@ h6 {
   border-radius: 25px;
   padding: 25px 15px 40px 15px;
 }
-.menu .overlay .menu__card .menu__restau {
+.menu .overlay .menu__card__restau {
   width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu .overlay .menu__card .menu__restau .nom__restau {
+.menu .overlay .menu__card__restau-nom {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;

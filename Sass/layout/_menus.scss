@@ -23,19 +23,20 @@
             border-radius: 25px;
             padding: 25px 15px 40px 15px;
 
-            .menu__restau {
+            &__restau {
                 width: 95%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                .nom__restau {
+                &-nom {
                     font-family: $font-secondary;
                     font-size: 28px;
                     font-weight: 400;
                 }
-
             }
+
+            
             .menu__content {
                 width: 100%;
                 display: flex;
