@@ -130,6 +130,7 @@ h6 {
 }
 
 .restaurant__menu--cards-content {
+  display: flex;
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -173,6 +174,8 @@ h6 {
   justify-content: center;
   width: 0;
   height: 100%;
+  border-left: 1px solid #99E2D0;
+  background: #99E2D0;
   border-radius: 0 20px 20px 0;
   opacity: 0;
   transition: all 300ms;
@@ -181,6 +184,7 @@ h6 {
   border: 1px solid;
   border-radius: 25px;
   padding: 3px;
+  color: #99E2D0;
   background: white;
 }
 .restaurant__menu--cards-content label {
