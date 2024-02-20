@@ -135,56 +135,56 @@ h6 {
   display: flex;
   background-color: #FFF;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   border-radius: 15px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
-.menu__card__food .flex__content {
+.menu__card__food .hidden {
+  display: none;
+}
+.menu__card__food .food__content {
   display: flex;
   padding: 15px;
   width: 90%;
   justify-content: space-between;
   align-items: flex-end;
 }
-.menu__card__food .flex__content .menu__desc {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
+.menu__card__food .food__content .food__content__title {
+  font-size: 18px;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__card__food .flex__content .menu__desc h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-.menu__card__food .flex__content .menu__desc h4 {
+.menu__card__food .food__content .food__content__subtitle {
   font-size: 15px;
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu__card__food .flex__content .menu__prix {
-  margin-left: auto;
-  margin-top: 20px;
-}
-.menu__card__food .flex__content .menu__prix h5 {
-  font-size: 15px;
+.menu__card__food .food__price {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 15px;
   font-weight: 700;
-  color: #353535;
+  font-size: 15px;
+  transition: margin 800ms ease-in-out;
 }
 .menu__card__food .menu__check {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -70px;
+  width: 70px;
   display: flex;
   justify-content: center;
-  background-color: #99e2d0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color: #FFF;
-  padding: 35px 25px;
-  margin-right: -8rem;
-  width: auto;
-  transition: margin-right 0.3s;
+  align-items: center;
+  background: #99E2D0;
+  color: rgb(255, 255, 255);
+  transition: transform 800ms ease-in-out;
 }
-.menu__card__food:hover .menu__check {
-  margin-right: 0;
-  height: 100%;
+.menu__card__food .menu__check .fa-circle-check {
+  transition: transform 1s ease-in-out;
+  animation: spinningOut 1s ease-in-out;
 }
 
 .navbar {
