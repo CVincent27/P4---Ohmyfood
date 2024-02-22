@@ -48,6 +48,73 @@ h6 {
   font-family: "Shrikhand", serif;
 }
 
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.loader__circle--1 {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 5rem;
+  border: 0.4rem solid transparent;
+  border-top-color: #9356dc;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  margin: auto;
+}
+.loader__circle--2 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  border: 0.4rem solid transparent;
+  border-top-color: #ff79da;
+  animation: spin 1.25s linear infinite;
+  position: absolute;
+  margin: auto;
+}
+.loader__circle--3 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: 0.4rem solid transparent;
+  border-top-color: #99e2d0;
+  animation: spin 1.5s linear infinite;
+  position: absolute;
+  margin: auto;
+}
+
+.disappear {
+  animation: end 1s forwards;
+  animation-delay: 2s;
+}
+.disappear .loader__circle--1 {
+  animation: shrinkAndFade 2s forwards 1s;
+}
+.disappear .loader__circle--2 {
+  animation: shrinkAndFade 2s forwards 1s;
+}
+.disappear .loader__circle--3 {
+  animation: shrinkAndFade 2s forwards 1s;
+}
+
+@keyframes shrinkAndFade {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes end {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
 .btn__goback {
   display: flex;
   border: none;
@@ -69,7 +136,7 @@ h6 {
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   padding: 15px 30px;
 }
 .btn__box__text {
@@ -145,9 +212,13 @@ h6 {
   color: transparent;
 }
 .heart:hover .fas {
-  transition: all 300ms ease-in;
+  transition: opacity 0.5s linear;
   display: inline;
   opacity: 1;
+}
+.heart:not(:hover) .fas {
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 0.5s linear;
 }
 
 .navbar {
@@ -167,7 +238,7 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 50px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px #D5D5D5;
   width: 100%;
   background: #EAEAEA;
 }

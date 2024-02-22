@@ -16,10 +16,14 @@
     }
     
     &:hover .fas {
-      transition: all 300ms ease-in;
+      transition: opacity 0.5s linear;
       display: inline;
       opacity: 1;
+    }
 
+    &:not(:hover) .fas {
+      opacity: 0;
+      transition: visibility 0s 2s, opacity 0.5s linear;
     }
     
 

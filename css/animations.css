@@ -1,9 +1,0 @@
-@charset "UTF-8";
-.transition-fade {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out; /* Ajoute une transition d'opacité */
-}
-
-.transition-fade-out {
-  opacity: 0;
-}/*# sourceMappingURL=animations.css.map */
