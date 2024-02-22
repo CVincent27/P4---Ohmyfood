@@ -211,12 +211,27 @@ h6 {
           background-clip: text;
   color: transparent;
 }
-.heart:hover .fas {
+.heart input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.heart label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.heart .fas, .heart input[type=checkbox]:checked + label .fas {
   transition: opacity 0.5s linear;
   display: inline;
   opacity: 1;
 }
-.heart:not(:hover) .fas {
+.heart input[type=checkbox]:not(:checked) ~ .fas {
   opacity: 0;
   transition: visibility 0s 2s, opacity 0.5s linear;
 }
