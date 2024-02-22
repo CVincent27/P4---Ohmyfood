@@ -56,3 +56,14 @@
         }
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    .fonctionnement {
+        padding: 50px 180px;
+        .fonc__card__box {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

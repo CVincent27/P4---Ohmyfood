@@ -289,6 +289,18 @@ h6 {
   justify-content: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .explore {
+    padding: 30px 0;
+  }
+  .explore .explore__box h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+  .explore .explore__btn__box .explore__btn {
+    width: 25%;
+  }
+}
 .fonctionnement {
   padding: 50px 20px;
   background-color: #FFF;
@@ -342,6 +354,16 @@ h6 {
   height: 70px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement .fonc__card__box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
 .restaurants {
   gap: 10px;
   display: flex;
@@ -359,6 +381,24 @@ h6 {
   gap: 18px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 30px 180px;
+    gap: 28px;
+  }
+  .restaurants .restaurant__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .restaurants .restaurant__flex .restaurant__card {
+    position: relative;
+    width: 45%;
+    margin: 0;
+  }
+}
 .footer__box {
   color: white;
   width: 100%;
@@ -381,47 +421,13 @@ h6 {
   gap: 10px;
 }
 
-/* Media query*/
 @media only screen and (min-width: 1024px) {
-  .explore {
-    padding: 30px 0;
-  }
-  .explore .explore__box h1 {
-    width: 100%;
-    font-size: 40px;
-  }
-  .explore .explore__btn__box .explore__btn {
-    width: 25%;
-  }
-  .fonctionnement {
-    padding: 50px 180px;
-  }
-  .fonctionnement .fonc__card__box {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  .restaurants {
-    padding: 30px 180px;
-    gap: 28px;
-  }
-  .restaurants .restaurant__flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  .restaurants .restaurant__flex .restaurant__card {
-    position: relative;
-    width: 45%;
-    margin: 0;
-  }
   .footer__box .footer__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
     gap: 40px;
+    height: 50px;
     padding: 30px 25px 15px;
   }
   .footer__box .footer__content .footer__list {
