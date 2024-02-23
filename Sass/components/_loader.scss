@@ -4,7 +4,7 @@
     height: 100%;
     z-index: 10;
     @include flex-center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: $color-background;
 
     &__circle--1 {
         width: 7rem;
@@ -38,6 +38,7 @@
         position: absolute;
         margin: auto;
     }
+
 }
 
 .disappear {
