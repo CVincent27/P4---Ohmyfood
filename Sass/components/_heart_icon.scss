@@ -1,5 +1,6 @@
 .heart {
   position: relative;
+  z-index: 0;
 
   & i {
       font-size: 1.5rem;
@@ -22,7 +23,8 @@
       cursor: pointer;
   }
 
-  & label {
+  & span {
+    z-index: 7;
       position: absolute;
       top: 0;
       left: 0;
@@ -32,15 +34,15 @@
   }
 
   .fas,
-  & input[type="checkbox"]:checked + label .fas {
-      transition: opacity 0.5s linear;
+  & input[type="checkbox"]:checked + span .fas {
+      transition: opacity 0.8s linear;
       display: inline;
       opacity: 1;
   }
 
   input[type="checkbox"]:not(:checked) ~ .fas {
     opacity: 0;
-    transition: visibility 0s 2s, opacity 0.5s linear;
+    transition: visibility 0s 2s, opacity 0.8s linear;
 }
 
 

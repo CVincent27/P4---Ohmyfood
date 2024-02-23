@@ -109,6 +109,7 @@ h6 {
 
 .heart {
   position: relative;
+  z-index: 0;
 }
 .heart i {
   font-size: 1.5rem;
@@ -130,7 +131,8 @@ h6 {
   width: 100%;
   cursor: pointer;
 }
-.heart label {
+.heart span {
+  z-index: 7;
   position: absolute;
   top: 0;
   left: 0;
@@ -138,14 +140,14 @@ h6 {
   width: 100%;
   cursor: pointer;
 }
-.heart .fas, .heart input[type=checkbox]:checked + label .fas {
-  transition: opacity 0.5s linear;
+.heart .fas, .heart input[type=checkbox]:checked + span .fas {
+  transition: opacity 0.8s linear;
   display: inline;
   opacity: 1;
 }
 .heart input[type=checkbox]:not(:checked) ~ .fas {
   opacity: 0;
-  transition: visibility 0s 2s, opacity 0.5s linear;
+  transition: visibility 0s 2s, opacity 0.8s linear;
 }
 
 .restaurant__menu--cards-content {
