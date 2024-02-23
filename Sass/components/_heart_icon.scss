@@ -1,49 +1,38 @@
 .heart {
-  position: relative;
-  z-index: 0;
+    position: relative;
 
-  & i {
-      font-size: 1.5rem;
-  }
+    & i {
+        font-size: 1.5rem;
+    }
 
-  & .fas {
-      position: absolute;
-      opacity: 0;
-      @include gradient(180deg);
-      cursor: pointer;
-      background-clip: text;
-      color: transparent;
-  }
+    & .fas {
+        position: absolute;
+        opacity: 0;
+        @include gradient(180deg);
+        cursor: pointer;
+        background-clip: text;
+        color: transparent;
+    }
 
-  & input[type="checkbox"] {
-      position: absolute;
-      opacity: 0;
-      height: 100%;
-      width: 100%;
-      cursor: pointer;
-  }
+    & div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
 
-  & span {
-    z-index: 7;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      cursor: pointer;
-  }
+    &:hover .fas,
+    .heart:hover div {
+        transition: opacity 0.8s linear;
+        display: inline;
+        opacity: 1;
+    }
 
-  .fas,
-  & input[type="checkbox"]:checked + span .fas {
-      transition: opacity 0.8s linear;
-      display: inline;
-      opacity: 1;
-  }
-
-  input[type="checkbox"]:not(:checked) ~ .fas {
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 0.8s linear;
-}
-
-
+    .fas,
+    div {
+        transition: opacity 0.8s linear;
+        opacity: 0;
+    }
 }
