@@ -12,7 +12,7 @@ a {
 }
 
 ul {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -45,7 +45,7 @@ h5 {
 h6 {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Shrikhand", serif;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .entrees-anim {
@@ -109,7 +109,6 @@ h6 {
 
 .heart {
   position: relative;
-  z-index: 0;
 }
 .heart i {
   font-size: 1.5rem;
@@ -124,15 +123,7 @@ h6 {
           background-clip: text;
   color: transparent;
 }
-.heart input[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-}
-.heart span {
-  z-index: 7;
+.heart div {
   position: absolute;
   top: 0;
   left: 0;
@@ -140,14 +131,16 @@ h6 {
   width: 100%;
   cursor: pointer;
 }
-.heart .fas, .heart input[type=checkbox]:checked + span .fas {
+.heart:hover .fas,
+.heart .heart:hover div {
   transition: opacity 0.8s linear;
   display: inline;
   opacity: 1;
 }
-.heart input[type=checkbox]:not(:checked) ~ .fas {
+.heart .fas,
+.heart div {
+  transition: opacity 0.8s linear;
   opacity: 0;
-  transition: visibility 0s 2s, opacity 0.8s linear;
 }
 
 .restaurant__menu--cards-content {
@@ -196,8 +189,8 @@ h6 {
   justify-content: center;
   width: 0;
   height: 100%;
-  border-left: 1px solid #99E2D0;
-  background: #99E2D0;
+  border-left: 1px solid #99e2d0;
+  background: #99e2d0;
   border-radius: 0 20px 20px 0;
   opacity: 0;
   transition: all 300ms;
@@ -206,7 +199,7 @@ h6 {
   border: 1px solid;
   border-radius: 25px;
   padding: 3px;
-  color: #99E2D0;
+  color: #99e2d0;
   background: white;
 }
 .restaurant__menu--cards-content label {
