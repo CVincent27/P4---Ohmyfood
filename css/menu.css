@@ -261,9 +261,9 @@ h6 {
   padding: 25px 15px 40px 15px;
 }
 .menu .overlay .menu__card__restau {
-  width: 95%;
+  width: 100%;
+  gap: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .menu .overlay .menu__card__restau-nom {
@@ -302,11 +302,11 @@ h6 {
     flex-wrap: nowrap;
     align-items: center;
   }
-  .menu .overlay .menu__card .menu__restau {
+  .menu .overlay .menu__card__restau {
     justify-content: center;
     gap: 30px;
   }
-  .menu .overlay .menu__card .menu__content {
+  .menu .overlay .menu__card__content {
     width: 70%;
   }
 }

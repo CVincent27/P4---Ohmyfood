@@ -24,9 +24,9 @@
             padding: 25px 15px 40px 15px;
 
             &__restau {
-                width: 95%;
+                width: 100%;
+                gap: 30px;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
 
                 &-nom {
@@ -75,11 +75,11 @@
                 flex-wrap: nowrap;
                 align-items: center;
 
-                .menu__restau {
+                &__restau {
                     justify-content: center;
                     gap: 30px;
                 }
-                .menu__content {
+                &__content {
                     width: 70%;
                 }
             }
