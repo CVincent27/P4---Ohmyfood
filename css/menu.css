@@ -6,6 +6,13 @@
   scroll-behavior: smooth;
 }
 
+body {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: #FFF;
