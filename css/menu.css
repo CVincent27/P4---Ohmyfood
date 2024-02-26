@@ -332,7 +332,7 @@ h6 {
   gap: 10px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__box .footer__content {
     display: flex;
     flex-direction: row-reverse;

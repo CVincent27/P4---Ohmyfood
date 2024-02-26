@@ -1,8 +1,8 @@
 // Section restau
 .restaurants {
-    gap: 10px;
+    gap: 28px;
     @include flex(column);
-    padding: 50px 15px 80px 15px;
+    padding: 30px 15px 80px 15px;
     background-color: $light-gray;
 
     .restaurant__flex {

@@ -394,12 +394,12 @@ h6 {
   }
 }
 .restaurants {
-  gap: 10px;
+  gap: 28px;
   display: flex;
   flex-direction: column;
   align-items: normal;
   justify-content: normal;
-  padding: 50px 15px 80px 15px;
+  padding: 30px 15px 80px 15px;
   background-color: #f6f6f6;
 }
 .restaurants .restaurant__flex {
@@ -450,7 +450,7 @@ h6 {
   gap: 10px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__box .footer__content {
     display: flex;
     flex-direction: row-reverse;
