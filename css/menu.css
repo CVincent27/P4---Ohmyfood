@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.homepage {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
@@ -103,6 +103,7 @@ h6 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(#ff79da, #9356dc);
   padding: 15px 30px;
+  transition: opacity 0.8s;
 }
 .btn__box__text {
   font-size: 16px;
@@ -257,7 +258,7 @@ h6 {
   flex-direction: column;
   gap: 40px;
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   padding: 25px 15px 40px 15px;
 }
 .menu .overlay .menu__card__restau {
@@ -265,6 +266,7 @@ h6 {
   gap: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .menu .overlay .menu__card__restau-nom {
   font-family: "Shrikhand", sans-serif;
@@ -290,7 +292,7 @@ h6 {
   justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .menu .overlay {
     display: flex;
     flex-direction: column;

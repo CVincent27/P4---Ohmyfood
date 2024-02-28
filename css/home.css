@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-body {
+.homepage {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
@@ -146,6 +146,7 @@ h6 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(#ff79da, #9356dc);
   padding: 15px 30px;
+  transition: opacity 0.8s;
 }
 .btn__box__text {
   font-size: 16px;
@@ -279,6 +280,11 @@ h6 {
   color: #353535;
 }
 
+@media only screen and (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+  }
+}
 .explore {
   display: flex;
   flex-direction: column;

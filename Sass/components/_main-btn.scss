@@ -5,8 +5,10 @@
     border: none;
     @include button-prop;
     padding: 15px 30px;
+    transition: opacity 0.8s;
 
   }
+
   &__text {
     font-size: 16px;
     font-weight: 500;
@@ -14,7 +16,7 @@
     color: $white;
 
     &:hover {
-        opacity: 0.7;
+      opacity: 0.7;
     }
   }
 }

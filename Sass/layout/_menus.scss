@@ -20,7 +20,7 @@
             flex-direction: column;
             gap: 40px;
             background-color: $light-gray;
-            border-radius: 25px;
+            border-radius: 25px 25px 0 0;
             padding: 25px 15px 40px 15px;
 
             &__restau {
@@ -28,6 +28,7 @@
                 gap: 30px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
 
                 &-nom {
                     font-family: $font-secondary;
@@ -62,7 +63,7 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .menu {
         .overlay {
             display: flex;
