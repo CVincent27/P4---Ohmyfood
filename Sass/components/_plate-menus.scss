@@ -4,7 +4,8 @@
             display: flex;
             background-color: $color-background;
             border-radius: 20px;
-            @include card-shadow; 
+            @include card-shadow;
+            overflow: hidden;
 
             &-description {
                 display: flex;
@@ -53,8 +54,8 @@
                 height: 100%;
                 background: $color-tertiary;
                 border-radius: 0 20px 20px 0;
-                opacity: 0;
-                transition: width 300ms;
+                overflow: hidden;
+                transition: width 600ms;
 
                 i {
                     border: 1px solid;
