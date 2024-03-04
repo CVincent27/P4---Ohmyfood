@@ -7,7 +7,6 @@
 }
 
 .homepage {
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: auto;
