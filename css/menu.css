@@ -296,10 +296,14 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) {
+  .menu .img__restau {
+    height: 380px;
+  }
   .menu .overlay {
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 410px;
   }
   .menu .overlay .menu__card {
     padding: 50px 30px;
