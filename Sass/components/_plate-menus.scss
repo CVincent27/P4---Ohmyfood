@@ -75,18 +75,17 @@
 
             input {
                 display: none;
-            }
-
-            input:checked + div {
-                width: 60px;
-                opacity: 1;
-                cursor: pointer;
-            }
             
-            input:not(:checked) + div i {
-                // pousse le i à droite
-                transform: translateX(100%);
-            }
+                &:checked + div {
+                  width: 60px;
+                  opacity: 1;
+                  cursor: pointer;
+                }
+            
+                &:not(:checked) + div i {
+                  transform: translateX(100%);
+                }
+              }
         }
     }
 }
