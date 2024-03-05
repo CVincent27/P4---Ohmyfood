@@ -4,8 +4,8 @@
             display: flex;
             background-color: $color-background;
             border-radius: 20px;
-            @include card-shadow;
             overflow: hidden;
+            @include card-shadow;
 
             &-description {
                 display: flex;
@@ -14,14 +14,13 @@
                 padding: 15px;
                 width: 100%;
                 overflow: hidden;
-                
 
                 h3 {
                     margin: 0;
                     font-size: 18px;
                     white-space: nowrap;
                     overflow: hidden;
-                    text-overflow:ellipsis; 
+                    text-overflow: ellipsis;
                 }
 
                 p {
@@ -29,7 +28,7 @@
                     font-size: 15px;
                     white-space: nowrap;
                     overflow: hidden;
-                    text-overflow:ellipsis; 
+                    text-overflow: ellipsis;
                 }
             }
 
@@ -37,7 +36,6 @@
                 display: flex;
                 padding: 15px;
                 color: $grey;
-                
 
                 p {
                     display: flex;
@@ -46,8 +44,8 @@
                     font-size: 15px;
                     font-weight: 700;
                 }
-
             }
+
             &-check {
                 @include flex-center;
                 width: 0;
@@ -55,7 +53,7 @@
                 background: $color-tertiary;
                 border-radius: 0 20px 20px 0;
                 overflow: hidden;
-                transition: width 600ms;
+                transition: width 600ms, transform 600ms;
 
                 i {
                     border: 1px solid;
@@ -63,6 +61,7 @@
                     padding: 3px;
                     color: $color-tertiary;
                     background: $color-background;
+                    transition: transform 600ms; 
                 }
             }
 
@@ -83,8 +82,11 @@
                 opacity: 1;
                 cursor: pointer;
             }
-
+            
+            input:not(:checked) + div i {
+                // pousse le i à droite
+                transform: translateX(100%);
+            }
         }
     }
-
 }
