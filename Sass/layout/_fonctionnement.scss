@@ -11,6 +11,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-top: 25px;
 
         .fonc__card {
             width: 100%;
@@ -59,11 +60,17 @@
 
 @media only screen and (min-width: 1024px) {
     .fonctionnement {
-        padding: 50px 180px;
-        .fonc__card__box {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
+        align-items: center;
+
+        .wrapper {
+            @include wrapper;
+
+            .fonc__card__box {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                
+            }
         }
     }
 }
