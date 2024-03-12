@@ -5,7 +5,7 @@
 	background-color: $grey;
 	
 	.footer__content {
-		padding: 22px 25px;
+		padding: 22px;
 		gap: 16px;
 		display: flex;
 		flex-direction: column;
@@ -25,20 +25,25 @@
 
 @media only screen and (min-width: 768px) {
 	.footer__box {
-		.footer__content {
-				max-width: 1440px;
-				padding: 22px 180px;
-				display: flex;
-				flex-direction: row-reverse;
-				align-items: flex-end;
-				gap: 40px;
-				height: 50px;
-			.footer__list {
-				display: flex;
-					flex-direction: row;
+		display: flex;
+		justify-content: center;
+		
+		.wrapper {
+			@include wrapper;
+		
+			.footer__content {
+					display: flex;
+					flex-direction: row-reverse;
 					align-items: flex-end;
-					justify-content: flex-start;
-					gap: 10px;
+					gap: 40px;
+					height: 50px;
+				.footer__list {
+					display: flex;
+						flex-direction: row;
+						align-items: flex-end;
+						justify-content: flex-start;
+						gap: 10px;
+				}
 			}
 		}
 	}
